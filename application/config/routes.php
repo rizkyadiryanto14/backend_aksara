@@ -66,5 +66,10 @@ $route['content/create']    = 'Content/create';
 $route['admin/addcontent_view'] = 'Content/addview_content';
 $route['content/upload_image'] = 'Content/upload_image';
 
-$route['admin/users']			= 'Users';
-$route['admin/kuis']			= 'Kuis';
+$route['admin/users']           = 'Users';
+$route['admin/kuis']            = 'Kuis';
+$route['admin/settings']        = 'Settings';
+
+$route['admin/insert_users']    = 'Users/insert';
+$route['admin/get_data_users']  = 'Users/get_data_users';
+$route['admin/delete_users/(:num)']    = 'Users/delete/$1';

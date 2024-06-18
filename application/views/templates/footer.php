@@ -42,6 +42,32 @@
 <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
 <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
 
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<?php if ($this->session->flashdata('sukses')) : ?>
+    <script>
+        Swal.fire({
+            title: 'Succes!',
+            text: '<?php echo $this->session->flashdata('sukses'); ?>',
+            icon: 'success',
+            confirmButtonText: 'OK'
+        });
+    </script>
+<?php endif; ?>
+
+<?php if ($this->session->flashdata('gagal')) : ?>
+    <script>
+        Swal.fire({
+            title: 'Wrong !',
+            text: '<?php echo $this->session->flashdata('gagal'); ?>',
+            icon: 'error',
+            confirmButtonText: 'OK'
+        });
+    </script>
+<?php endif; ?>
+
+
 </body>
 
 </html>

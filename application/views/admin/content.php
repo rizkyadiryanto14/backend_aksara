@@ -1,7 +1,5 @@
 <?php $this->load->view('templates/header'); ?>
-
 <?php $this->load->view('templates/navbar'); ?>
-
 <?php $this->load->view('templates/sidebar'); ?>
 
 <div class="content-wrapper">
@@ -84,7 +82,7 @@
                 },
                 {
                     "data": null,
-                    "defaultContent": "<button class='btn btn-warning btn-edit'>Edit</button> <button class='btn btn-danger btn-delete'>Delete</button>"
+                    "defaultContent": "<button class='btn btn-warning btn-edit btn-sm'><i class=\"fas fa-edit\"></i></button> <button class='btn btn-danger btn-delete btn-sm'><i class=\"fas fa-trash\"></i></button>"
                 }
             ]
         });

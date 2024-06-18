@@ -16,30 +16,30 @@ class Content extends CI_Controller
         $this->load->model('Content_model');
     }
 
-	/**
-	 * @return void
-	 */
+    /**
+     * @return void
+     */
 
     function index(): void
-	{
+    {
         $this->load->view('admin/content');
     }
 
-	/**
-	 * @return void
-	 */
+    /**
+     * @return void
+     */
 
-	function addview_content(): void
-	{
+    function addview_content(): void
+    {
         $this->load->view('admin/add_content');
     }
 
-	/**
-	 * @return void
-	 */
+    /**
+     * @return void
+     */
 
-	public function get_content_data(): void
-	{
+    public function get_content_data(): void
+    {
         $columns = array(
             0 => 'id_content',
             1 => 'judul',
@@ -86,12 +86,12 @@ class Content extends CI_Controller
         echo json_encode($json_data);
     }
 
-	/**
-	 * @return void
-	 */
+    /**
+     * @return void
+     */
 
     function insert(): void
-	{
+    {
         $input = $this->input;
         $data = [
             'judul'         => $input->post('judul'),
@@ -102,12 +102,12 @@ class Content extends CI_Controller
         ];
     }
 
-	/**
-	 * @return void
-	 */
+    /**
+     * @return void
+     */
 
     public function create(): void
-	{
+    {
         $this->form_validation->set_rules('judul', 'Judul', 'required');
         $this->form_validation->set_rules('jenis_konten', 'Jenis Konten', 'required');
         $this->form_validation->set_rules('kontent', 'Kontent', 'required');
@@ -143,12 +143,12 @@ class Content extends CI_Controller
             ->set_output(json_encode($response));
     }
 
-	/**
-	 * @return void
-	 */
+    /**
+     * @return void
+     */
 
     public function upload_image(): void
-	{
+    {
         if (isset($_FILES['upload']['name'])) {
             $file = $_FILES['upload']['tmp_name'];
             $fileName = $_FILES['upload']['name'];

@@ -1,8 +1,8 @@
-<?php $this->load->view('templates/header')?>
+<?php $this->load->view('templates/header') ?>
 
-<?php $this->load->view('templates/navbar')?>
+<?php $this->load->view('templates/navbar') ?>
 
-<?php $this->load->view('templates/sidebar')?>
+<?php $this->load->view('templates/sidebar') ?>
 
 
 <div class="content-wrapper">
@@ -25,11 +25,26 @@
 	<!-- /.content-header -->
 
 	<section class="content">
-		<div class="container-fluid"></div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="card">
+						<div class="card-header">
+							<a href="<?= base_url('admin/tambah_kuis') ?>" class="btn btn-primary">Tambah Kuis</a>
+						</div>
+						<div class="card-body">
+							<div class="table-responsive">
+								<table class="table table-bordered">
+
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 </div>
 
 
-
-
-<?php $this->load->view('templates/footer')?>
+<?php $this->load->view('templates/footer') ?>
