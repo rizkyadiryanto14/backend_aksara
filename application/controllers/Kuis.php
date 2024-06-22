@@ -14,4 +14,9 @@ class Kuis extends CI_Controller
 	{
 		$this->load->view('admin/kuis');
 	}
+
+	public function add_view()
+	{
+		$this->load->view('admin/tambah_kuis');
+	}
 }

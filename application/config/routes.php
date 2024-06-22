@@ -68,6 +68,7 @@ $route['content/upload_image'] = 'Content/upload_image';
 
 $route['admin/users']           = 'Users';
 $route['admin/kuis']            = 'Kuis';
+$route['admin/tambah_kuis']     = 'Kuis/add_view';
 $route['admin/settings']        = 'Settings';
 
 $route['admin/insert_users']    = 'Users/insert';

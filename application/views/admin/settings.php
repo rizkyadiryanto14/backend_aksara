@@ -36,6 +36,9 @@
                         <li class="nav-item">
                             <a class="nav-link" id="icon-tab" data-toggle="tab" href="#icon" role="tab" aria-controls="icon" aria-selected="false">Informasi Aplikasi</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="panduan-tab" data-toggle="tab" href="#panduan" role="tab" aria-controls="panduan" aria-selected="false">Panduan Aplikasi</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="card-body">
@@ -114,6 +117,24 @@
                                 <div class="form-group col-md-12">
                                     <input type="reset" name="reset" value="Reset" class="btn btn-secondary mr-2">
                                     <input type="submit" name="submit" value="Simpan Favicon" class="btn btn-primary">
+                                </div>
+                            </form>
+                        </div>
+                        <!-- menu empat -->
+                        <div class="tab-pane fade" id="panduan" role="tabpanel" aria-labelledby="panduan-tab">
+                            <h3 class="col-md-12 order-md-1">Panduan Aplikasi</h3>
+                            <form action="<?php echo site_url('admin/konfig/icon') ?>" method="post" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label for="nama_panduan">Nama Panduan</label>
+                                    <input type="text" name="nama_panduan" id="nama_panduan" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="nama_panduan">Nama Panduan</label>
+                                    <textarea name="panduan" id="paduan" class="form-control"></textarea>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <input type="reset" name="reset" value="Reset" class="btn btn-secondary mr-2">
+                                    <input type="submit" name="submit" value="Simpan Panduan" class="btn btn-primary">
                                 </div>
                             </form>
                         </div>
